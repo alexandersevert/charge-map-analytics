@@ -1,9 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2024-01-04T05:29:15.846Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" version="22.1.16" etag="joYBKEPOEsjJ1d4u_HPb" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-05T05:56:22.423Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="GlqsQu6Kth06b-0HUOJp" version="22.1.16" type="github">
   <diagram name="Page-1" id="vInokqjLiej0mtxUhb_H">
-    <mxGraphModel>
+    <mxGraphModel dx="1219" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="T2OevOVsELdTV8TUWCbN-4" value="Web Application" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T2OevOVsELdTV8TUWCbN-5" value="&lt;u&gt;Data Sources&lt;br&gt;&lt;br&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;APIs&lt;/span&gt;&lt;br&gt;Web Scraping&lt;br&gt;Public Datasets" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="260" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="T2OevOVsELdTV8TUWCbN-6" value="&lt;u&gt;ETL Process&lt;/u&gt;&lt;br&gt;&lt;br&gt;Extract&lt;br&gt;Transform&lt;br&gt;Load" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="430" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="T2OevOVsELdTV8TUWCbN-7" value="&lt;u&gt;PostgreSQL&lt;br&gt;Database&lt;/u&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="550" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T2OevOVsELdTV8TUWCbN-8" value="&lt;u&gt;Data Processing &amp;amp; Analysis&lt;/u&gt;&lt;br&gt;&lt;br&gt;Python&lt;br&gt;Pandas&lt;br&gt;Jupyter Notebooks" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="670" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="T2OevOVsELdTV8TUWCbN-9" value="&lt;u&gt;Backend&lt;br&gt;&lt;/u&gt;&amp;nbsp;&lt;br&gt;Node.js/Express.js" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="810" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T2OevOVsELdTV8TUWCbN-10" value="&lt;u&gt;Frontend&lt;/u&gt;&lt;br&gt;&lt;br&gt;React.js" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="910" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T2OevOVsELdTV8TUWCbN-11" value="&lt;u&gt;Data Visualization&lt;br&gt;&lt;/u&gt;&lt;br&gt;D3.js&lt;br&gt;Leaflet.js" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="1010" width="120" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
