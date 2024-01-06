@@ -24,7 +24,7 @@ Before beginning, ensure you have the following installed:
 Clone the repository to your local machine to get started with `charge-map-analytics`:
 
 ```bash
-git clone [repository URL]
+git clone https://github.com/alexandersevert/charge-map-analytics
 cd charge-map-analytics
 ```
 
