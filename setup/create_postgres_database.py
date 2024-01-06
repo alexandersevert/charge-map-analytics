@@ -1,11 +1,10 @@
 """
 This script reads database connection details from 'credentials.json' and
 creates a new PostgreSQL database. The user must have the necessary permissions
-to create a database. The name of the new database should be provided when
-prompted.
+to create a database.
 
 Usage:
-    Run the script and follow the prompts. Ensure 'credentials.json' is present.
+    Run the script. Ensure 'credentials.json' is present.
     python create_postgres_db.py
 
 Security Note:
@@ -37,16 +36,15 @@ def load_credentials(file_path):
         print(f"Error decoding JSON from the file: {file_path}")
         sys.exit(1)
 
-def create_database(creds, db_name):
+def create_database(creds):
     """
     Creates a PostgreSQL database using provided credentials.
 
     Args:
         creds (dict): Database credentials.
-        db_name (str): Name of the database to be created.
     """
     try:
-        conn = psycopg2.connect(dbname=creds["dbname"], user=creds["user"],
+        conn = psycopg2.connect(dbname="postgres", user=creds["user"],
                                 password=creds["password"], host=creds["host"], port=creds["port"])
         conn.autocommit = True
     except psycopg2.OperationalError as e:
@@ -55,18 +53,13 @@ def create_database(creds, db_name):
 
     with conn.cursor() as cur:
         try:
-            cur.execute(sql.SQL("CREATE DATABASE {}").format(sql.Identifier(db_name)))
-            print(f"Database '{db_name}' created successfully.")
+            cur.execute(sql.SQL("CREATE DATABASE {}").format(sql.Identifier(creds["dbname"])))
+            print(f"Database '{creds['dbname']}' created successfully.")
         except psycopg2.Error as e:
-            print(f"Error creating database '{db_name}': {e}")
+            print(f"Error creating database '{creds['dbname']}': {e}")
         finally:
             conn.close()
 
 if __name__ == "__main__":
     credentials = load_credentials('credentials.json')
-    new_db_name = input("Enter the name of the new database to create: ").strip()
-
-    if new_db_name:
-        create_database(credentials, new_db_name)
-    else:
-        print("No database name provided. Exiting.")
+    create_database(credentials)
