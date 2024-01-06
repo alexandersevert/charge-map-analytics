@@ -33,7 +33,7 @@ def create_credentials_file():
     }
 
     try:
-        with open("../credentials.json", "w", encoding="utf-8") as file:
+        with open("credentials.json", "w", encoding="utf-8") as file:
             json.dump(credentials, file, indent=4)
         print("credentials.json has been created successfully.")
     except IOError as e:

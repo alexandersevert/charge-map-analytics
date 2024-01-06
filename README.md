@@ -42,16 +42,10 @@ This will install all the necessary packages as per the requirements.txt file in
 
 The setup subfolder contains scripts for setting up the database. Follow these steps to configure your database environment:
 
-a. Navigate to the setup folder:
+a. Refer to the README in the setup folder for detailed instructions on creating and configuring the database:
 
 ```bash
-cd setup
-```
-
-b. Refer to the README in the setup folder for detailed instructions on creating and configuring the database:
-
-```bash
-less README.md
+less setup/README.md
 ```
 
 Follow the instructions in setup/README.md to properly set up your database for `charge-map-analytics`.

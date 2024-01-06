@@ -29,8 +29,7 @@ charge-map-analytics/
 Run `create_credentials_json.py` inside the setup folder to generate a credentials.json file. This file will store your PostgreSQL server credentials.
 
 ```bash
-cd setup
-python create_credentials_json.py
+python setup/create_credentials_json.py
 ```
 
 Follow the prompts to enter your database credentials: database name, user, password, host, and port.
@@ -44,7 +43,7 @@ The credentials.json file is already included in the .gitignore to prevent it fr
 Run `create_postgres_db.py` to create a new PostgreSQL database.
 
 ```bash
-python create_postgres_db.py
+python setup/create_postgres_database.py
 ```
 
 Enter the name of the new database when prompted. Verify the creation of the database by logging into your PostgreSQL server.
