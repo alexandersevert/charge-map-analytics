@@ -6,7 +6,7 @@
 
 ## Architecture Diagram
 
-[![Architecture Diagram](./architecture-diagrams/architecture_diagram.drawio.svg)](https://app.diagrams.net/#Halexandersevert%2Fcharge-map-analytics%2Fmain%2Farchitecture_diagrams%2Farchitecture_diagram.drawio.svg)
+[![Architecture Diagram](./architecture_diagrams/architecture_diagram.drawio.svg)](https://app.diagrams.net/#Halexandersevert%2Fcharge-map-analytics%2Fmain%2Farchitecture_diagrams%2Farchitecture_diagram.drawio.svg)
 
 ## Getting Started
 
