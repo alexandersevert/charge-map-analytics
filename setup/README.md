@@ -14,7 +14,7 @@ charge-map-analytics/
 │
 ├── setup/
 │   ├── create_credentials_json.py
-│   ├── create_postgres_db.py
+│   ├── create_postgres_database.py
 │   └── README.md
 │
 └── [other project directories]
